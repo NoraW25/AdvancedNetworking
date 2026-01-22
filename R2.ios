@@ -43,8 +43,11 @@ int G0/0/1
 exit
 
 !OSPF Configuration
-router-id 2.2.2.2
-network 192.168.8.0 0.0.0.3 area 0
+router ospf 1
+    router-id 2.2.2.2
+    network 40.0.255.252 0.0.0.3 area 0
+    network 20.0.0.0 0.0.0.255 area 0
+    network 20.0.2.0 0.0.0.255 area 0
 
 !BGP Configuration
 

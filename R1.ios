@@ -45,8 +45,11 @@ exit
 
 !OSPF Configuration
 router ospf 1
-router-id 1.1.1.1
-network 192.168.8.0 0.0.0.3 area 0
+    router-id 1.1.1.1
+    network 30.0.255.252 0.0.0.3 area 0
+    network 20.0.0.0 0.0.0.255 area 0
+    network 20.0.1.0 0.0.0.255 area 0
+
 
 !BGP Configuration
 
