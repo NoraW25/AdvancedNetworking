@@ -1,6 +1,6 @@
 !delete vlan.dat
 configure terminal
-hostname ISP1
+hostname ISP2
 no ip domain-lookup
 banner motd #Verboden toegang voor onbevoegde!#
 line console 0
@@ -46,8 +46,13 @@ exit
 router bgp 140
     bgp router-id 140.0.0.0
     neighbor 30.0.255.249 remote-as 130
+    network 40.0.0.0 mask 255.255.255.0
 exit
 
 end
 clock set 12:05:49 11 Dec 2025
 !copy running-config startup-config
+
+
+!show:
+!show ip bgp summary
