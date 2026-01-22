@@ -57,7 +57,7 @@ router bgp 120
     neighbor 40.0.255.253 remote-as 140
     neighbor 20.0.0.1 remote-as 120
     network 40.0.0.0 mask 255.255.255.0
-    network 20.0.0.0 maks 255.255.255.0
+    network 20.0.0.0 mask 255.255.255.0
     network 40.0.255.252 mask 255.255.255.252
 exit
 
