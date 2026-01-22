@@ -49,6 +49,7 @@ router ospf 1
     network 30.0.255.252 0.0.0.3 area 0
     network 20.0.0.0 0.0.0.255 area 0
     network 20.0.1.0 0.0.0.255 area 0
+exit
 
 
 !BGP Configuration
