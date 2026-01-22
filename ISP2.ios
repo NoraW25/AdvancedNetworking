@@ -43,7 +43,10 @@ int G0/0/1
 exit
 
 !BGP Configuration
-
+router bgp 140
+    bgp router-id 140.0.0.0
+    neighbor 30.0.255.249 remote-as 130
+exit
 
 end
 clock set 12:05:49 11 Dec 2025

@@ -47,6 +47,10 @@ exit
 
 
 !BGP Configuration
+router bgp 130
+    bgp router-id 130.0.0.0
+    neighbor 30.0.255.250 remote-as 140
+exit
 
 
 end
