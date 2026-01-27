@@ -33,7 +33,7 @@ exit
 
 int G0/0/0
     description to R1 G0/0/0
-    ip address 30.0.255.254 255.255.255.252
+    ip address 30.0.255.253 255.255.255.252
     no shutdown
 exit
 
@@ -51,11 +51,12 @@ router bgp 130
     bgp router-id 130.0.0.0
     bgp log-neighbor-changes
     neighbor 30.0.255.250 remote-as 140
-    neighbor 30.0.255.253 remote-as 120
+    neighbor 30.0.255.254 remote-as 120
     network 30.0.0.0 mask 255.255.255.0
 exit
 
 
 end
 clock set 12:05:49 11 Dec 2025
+
 !copy running-config startup-config
